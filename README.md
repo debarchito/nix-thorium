@@ -20,6 +20,6 @@ nix run github:debarchito/nix-thorium
     thorium = nix-thorium.packages.${system};
   in {
     # use thorium.thorium-avx2
-  }
+  };
 }
 ```
