@@ -12,7 +12,7 @@
         thorium-avx2 =
           let
             pkgs = import nixpkgs { system = "x86_64-linux"; };
-            pname = "thorium-avx2";
+            pname = "thorium";
             version = "130.0.6723.174";
             src = pkgs.fetchurl {
               url = "https://github.com/Alex313031/thorium/releases/download/M130.0.6723.174/Thorium_Browser_130.0.6723.174_AVX2.AppImage";
@@ -36,7 +36,7 @@
       apps.x86_64-linux = {
         thorium-avx2 = {
           type = "app";
-          program = "${self.packages.x86_64-linux.thorium-avx2}/bin/thorium-avx2";
+          program = "${self.packages.x86_64-linux.thorium-avx2}/bin/thorium";
         };
         default = self.apps.x86_64-linux.thorium-avx2;
       };
